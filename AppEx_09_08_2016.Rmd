@@ -1,0 +1,45 @@
+---
+title: "Exploring the Paris paintings data"
+author:
+- Add Author 1
+- Add Author 2
+- Add Author 3
+- Add Author 4
+output: 
+  html_document: 
+    highlight: pygments
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(readr)
+pp = read_csv("~/paris_paintings.csv")
+```
+
+
+### Question 1 - 
+
+<!-- Include your write-up and any relevant code -->
+
+```{r}
+
+```
+
+
+### Question 2 - 
+
+<!-- Include your write-up and any relevant code -->
+
+```{r}
+
+```
+
+
+### Question 3 - 
+
+<!-- Include your write-up and any relevant code -->
+
+```{r}
+
+```
