@@ -1,10 +1,9 @@
 ---
 title: "Exploring the Paris paintings data"
 author:
-- Add Author 1
-- Add Author 2
-- Add Author 3
-- Add Author 4
+- Colin Rundel
+- John Doe
+- Jane Doe
 output: 
   html_document: 
     highlight: pygments
