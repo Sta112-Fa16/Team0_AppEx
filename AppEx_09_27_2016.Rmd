@@ -1,0 +1,71 @@
+---
+title: "Modeling price using the Paris paintings data"
+author:
+- Add Author 1
+- Add Author 2
+- Add Author 3
+- Add Author 4
+output: 
+  html_document: 
+    highlight: pygments
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(stringr)
+pp = read.csv("~/paris_paintings.csv") %>% tbl_df()
+pp = pp %>% mutate(price = str_replace(price, ",", "") %>% as.numeric())
+```
+
+
+### Model 1 - 
+
+```{r}
+
+```
+
+Interpretation: 
+
+
+### Model 2 - 
+
+```{r}
+
+```
+
+Interpretation: 
+
+
+### Model 3 - 
+
+```{r}
+
+```
+
+Interpretation: 
+
+
+### Model 4 - 
+
+```{r}
+
+```
+
+Interpretation: 
+
+
+### Model 5 - 
+
+```{r}
+
+```
+
+Interpretation: 
+
+
+
+### Synthesis
+
+
