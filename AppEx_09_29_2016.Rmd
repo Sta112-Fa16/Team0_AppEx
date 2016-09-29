@@ -1,0 +1,100 @@
+---
+title: "Modeling log price in the Paris paintings data"
+author:
+- Add Author 1
+- Add Author 2
+- Add Author 3
+- Add Author 4
+output: 
+  html_document: 
+    highlight: pygments
+    theme: flatly
+---
+
+### Load the data
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(stringr)
+pp = read.csv("~/paris_paintings.csv") %>% 
+    tbl_df() %>%
+    mutate(price = str_replace(price, ",", "") %>% as.numeric())
+```
+
+
+#### Price vs. a binary variable:
+
+<!-- Fit a model predicting `log(price)` from one of the binary (0/1) variables in the dataset. -->
+
+```{r}
+
+```
+
+<!-- Write out the linear model, in the form $\widehat{y} = b_0 + b_1 x$ but using the actual variables instead of $y$ and $x$, and using the estimated coefficients using $b_0$ and $b_1$ -->
+
+
+
+<!-- Interpret the slope and the intercept. -->
+
+
+
+<!-- Calculate and interpret $R^2$. -->
+
+
+
+
+#### Price vs. a numerical variable:
+
+<!-- Fit a model predicting `log(price)` from one of the numerical variables in the dataset. -->
+
+```{r}
+
+```
+
+
+<!-- Write out the linear model, as above. -->
+
+
+
+<!-- Interpret the slope and the intercept. -->
+
+
+
+<!-- Calculate and interpret $R^2$. -->
+
+
+
+
+#### Price vs. material:
+
+<!-- Recreate the recoding of the material variable: `mat` (from class) and fit a model predicting `log(price)` from `mat`. -->
+
+```{r}
+
+```
+
+<!-- Write out the linear model, as above. -->
+
+
+
+<!-- Interpret the slopes and the intercept. -->
+
+
+
+<!-- Calculate and interpret $R^2$. -->
+
+
+
+<!-- Paintings with which material type are predicted to be the most expensive? -->
+
+
+
+
+#### Synthesis: 
+
+<!-- Write one synthesis paragraph comparing your models and 
+determine which model does the best job in explaining the variability in log prices
+of paintings. Your interpretations should be in context of the data, which means
+you need to understand the context of your data. -->
+
