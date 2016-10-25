@@ -1,0 +1,62 @@
+---
+title: "Inference for a single proportion"
+author:
+- Add Author 1
+- Add Author 2
+- Add Author 3
+- Add Author 4
+output: 
+  html_document: 
+    highlight: pygments
+    theme: flatly
+---
+
+### Libraries
+
+```{r}
+
+```
+
+
+### 1. Organ donors
+
+<!--
+
+- use as few hard coded arguments as possible (the ultimate goal is to be able to re-use the code with little or no modification for the next dataset/hypothesis test)
+- use 50,000 simulations
+- plot the null distribution as a histogram
+- calculate the p-value in R (as opposed to counting number of simulations off of the dot plot)
+- write up the conclusion based on the new p-value (and make sure your interpretation/
+conclusion is in context of the data and the research question)
+    - use inline R code to report the p-value in the text (if you're not sure how,
+    see the "Inline R code" section at http://rmarkdown.rstudio.com)
+
+-->
+
+```{r}
+sim_dist = data.frame(p_hat_sim = rep(NA, 100))
+for (i in 1:100){
+  sim = sample(outcomes, size = 62, prob = c(0.1, 0.9), replace = TRUE)
+  p_hat_sim = sum(sim == "complication") / length(sim)
+  sim_dist$p_hat_sim[i] = p_hat_sim
+}
+
+ggplot(sim_dist, aes(x = p_hat_sim)) + 
+  geom_dotplot()
+```
+
+
+### 2. Planned Parenthood funding
+
+<!-- 
+Do these data provide convincing (statistically significant) evidence for this title? 
+
+Be sure to report a p-value and state your conclusion in context of the data and the 
+research question. Once again, use inline R code for incorporating the p-value in
+the text.
+-->
+
+
+```{r}
+
+```
